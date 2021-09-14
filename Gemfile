@@ -57,3 +57,4 @@ gem 'react-rails'
 
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 5.12.0'
