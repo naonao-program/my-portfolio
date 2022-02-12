@@ -1,18 +1,23 @@
-<div id="top-page">
-  <aside>
-    <h1 id="logo"><%=link_to 'Yasunao Iwamoto', root_path %></h1>
-    <nav id="main-menu" role="navigation">
-      <ul>
-        <li><%=link_to 'Home', root_path %></li>
-        <li><%=link_to 'Blog', root_path %></li>
-        <li><%=link_to 'Camera', root_path %></li>
-        <li><%=link_to 'Programming', root_path %></li>
-      </ul>
-    </nav>
-    <ul>
-      <li><a href="https://github.com/naonao-program" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></li>
-      <li><a href="https://www.instagram.com/miqo_ran/?hl=ja" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></li>
-      <li><a href="https://www.youtube.com/channel/UCpIA_0WKJb89Snc-vZSwp0Q" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></li>
-    </ul>
-  </aside>
+<div class="position-sticky pt-md-5">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <%= link_to root_path , class:"nav-link active" do %> 
+        <span class="ml-2">Home</span>
+      <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to blogs_path, class:"nav-link fa-solid fa-pencil" do %>
+        <span class="ml-2">Blog</span>
+      <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to camera_portfolio_path, class:"nav-link" do %>
+        <span class="ml-2">Camera</span>
+      <% end %>
+    <li class="nav-item">
+      <%= link_to programming_portfolio_path, class:"nav-link" do%>
+        <span class="ml-2">Programming</span>
+      <% end %>
+    </li>
+  </ul>
 </div>
