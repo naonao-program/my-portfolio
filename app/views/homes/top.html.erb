@@ -1,31 +1,33 @@
 <div class="row">
   <div class="position-sticky pt-md-5 col-md-2 sidebar_fixed">
-    <ul class="nav flex-column text-center">
-      <li class="nav-item">
-        <%= link_to root_path , class:"nav-link active" do %> 
-          <span class="ml-2">Home</span>
-        <% end %>
-      </li>
-      <li class="nav-item">
-        <%= link_to about_path , class:"nav-link active" do %> 
-          <span class="ml-2">About</span>
-        <% end %>
-      </li>
-      <li class="nav-item">
-        <%= link_to blogs_path, class:"nav-link fa-solid fa-pencil" do %>
-          <span class="ml-2">Blog</span>
-        <% end %>
-      </li>
-      <li class="nav-item">
-        <%= link_to camera_portfolio_path, class:"nav-link" do %>
-          <span class="ml-2">Camera</span>
-        <% end %>
-      <li class="nav-item">
-        <%= link_to programming_portfolio_path, class:"nav-link" do%>
-          <span class="ml-2">Programming</span>
-        <% end %>
-      </li>
-    </ul>
+    <nav id="fh5co-main-menu" role="navigation">
+      <ul class="nav flex-column text-center">
+        <li class="nav-item">
+          <%= link_to root_path , class:"nav-link active" do %> 
+            <span class="ml-2">Home</span>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to about_path , class:"nav-link" do %> 
+            <span class="ml-2">About</span>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to blogs_path, class:"nav-link fa-solid fa-pencil" do %>
+            <span class="ml-2">Blog</span>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to camera_portfolio_path, class:"nav-link" do %>
+            <span class="ml-2">Camera</span>
+          <% end %>
+        <li class="nav-item">
+          <%= link_to programming_portfolio_path, class:"nav-link" do%>
+            <span class="ml-2">Programming</span>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
     <ul class="nav flex-column d-flex flex-row text-center">
       <li class="nav-item ml-4 mt-2"><a href="https://github.com/naonao-program" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a></li>
       <li class="nav-item ml-4 mt-2"><a href="https://www.instagram.com/miqo_ran/?hl=ja" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
@@ -33,6 +35,6 @@
     </ul>
   </div>
   <div class = "col-md-10">
-    <%=image_tag('top.jpeg', class:"img-fluid")%>
+    <%=image_tag('top.jpeg', class:"img-fluid top-image")%>
   </div>
 </div>
