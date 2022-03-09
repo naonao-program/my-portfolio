@@ -1,1 +1,11 @@
-画像を添付できるようにする
+<div class="container">
+  <div class="row">
+    <div class="mt-5">
+      <%= form_with(model: @camera, local: true) do |f| %>
+        <%= f.file_field :image %>
+        タイトル:<%= f.text_field :title %>
+        <%= f.submit '投稿'%>
+      <% end %>
+    </div>
+  </div>
+</div>

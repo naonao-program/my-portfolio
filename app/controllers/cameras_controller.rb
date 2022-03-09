@@ -4,11 +4,18 @@ class CamerasController < ApplicationController
   end
 
   def new
+    @camera = Camera.new
   end
 
   def create
+    @cameras = Camera.new
+    if @camera.save
+      
+    end
   end
 
   private
-  params.require(:camera).permit(:title, :image)
+  def camera_params
+    params.require(:camera).permit(:title, :image)
+  end
 end
