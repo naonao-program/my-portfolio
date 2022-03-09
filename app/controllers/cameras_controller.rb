@@ -8,4 +8,7 @@ class CamerasController < ApplicationController
 
   def create
   end
+
+  private
+  params.require(:camera).permit(:title, :image)
 end
