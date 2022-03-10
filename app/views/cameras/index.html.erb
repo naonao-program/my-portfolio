@@ -1,0 +1,15 @@
+<div class="container">
+  <section class="hover">
+      <div class="mt-5">
+        <% @cameras.each do |camera| %>
+          <div class="hover-img">
+            <%= image_tag camera.image, width: '20%', height: '20%' %>
+          </div>
+          <div class="hover-text">
+            <p class="text1"><%= camera.title %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</div>

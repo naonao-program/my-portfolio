@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="row">
-    <div class="mt-5">
-      <%= form_with(model: @camera, local: true) do |f| %>
-        <%= f.file_field :image %>
-        タイトル:<%= f.text_field :title %>
-        <%= f.submit '投稿'%>
-      <% end %>
-    </div>
+<div class="mt-5">
+  <div class="container my-5">
+    <%= form_with(model: @cameras,  local: true) do |f| %>
+      <%= f.file_field :image %>
+      タイトル:<%= f.text_field :title %>
+      insta_url:<%= f.text_field :insta_url %>
+      youtube_url:<%= f.text_field :youtube_url %>
+      <%= f.submit '投稿'%>
+    <% end %>
   </div>
 </div>
