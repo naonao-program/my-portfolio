@@ -14,6 +14,47 @@
   </head>
 
   <body>
+  <div id="splash">
+  <div id="splash_logo">
+    
+  </div>
+  <div class="row">
+    <div class="position-sticky mt-5 pt-md-5 col-md-2 sidebar_fixed">
+      <h2 class= "text-center ml-3">Iwamoto Yasunao Portfolio</h2>
+      <nav id="fh5co-main-menu" role="navigation">
+        <ul class="nav flex-column text-center">
+          <li class="nav-item">
+            <%= link_to root_path , class:"nav-link active" do %> 
+              <span class="ml-2 text-light">Home</span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to about_path , class:"nav-link" do %> 
+              <span class="ml-2 text-light">About</span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to blogs_path, class:"nav-link fa-solid fa-pencil" do %>
+              <span class="ml-2 text-light">Blog</span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to cameras_path, class:"nav-link" do %>
+              <span class="ml-2 text-light">Camera</span>
+            <% end %>
+          <li class="nav-item">
+            <%= link_to programming_portfolio_path, class:"nav-link" do%>
+              <span class="ml-2 text-light">Programming</span>
+            <% end %>
+          </li>
+        </ul>
+      </nav>
+      <ul class="nav flex-column d-flex flex-row text-center">
+        <li class="nav-item ml-4 mt-2"><a href="https://github.com/naonao-program" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x text-light"></i></a></li>
+        <li class="nav-item ml-4 mt-2"><a href="https://www.instagram.com/miqo_ran/?hl=ja" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x text-light"></i></a></li>
+        <li class="nav-item ml-4 mt-2"><a href="https://www.youtube.com/channel/UCpIA_0WKJb89Snc-vZSwp0Q" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube fa-2x text-light"></i></a></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
