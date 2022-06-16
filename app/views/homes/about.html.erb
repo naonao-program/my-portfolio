@@ -10,17 +10,29 @@
       <h3 class="mt-3 pl25 sm-pl20 fz130 sm-fz120">岩本泰直</h3>
       <p class="mt-3 ff-en">大学４年生/カメラマン/プログラマー</p>
       <p class="mt-3">2000年11月6日生まれ(<%= @age %>)神戸市出身</p>
-      <p class="mt-5 pb-3"><%= link_to "https://www.osakac.ac.jp/",target: :_blank do %>
-        University
-        <i class="fas fa-external-link-alt"></i>
-      <% end %>
-      <br>大阪の大学に通っている4年生です！</p>
-      <p class="mt-1 pb-3"><%= link_to "https://youtube.com/playlist?list=PLGUQewQ-bC3_IqDcbKnJ8WpgYX9oeXaym" do %>
-        Camera
-        <i class="fas fa-external-link-alt"></i>
-      <% end %>
-      <br>かっこいい、写真や動画を撮るのが得意です！！</p>
-      <p class="mt-1 pb-3">Programming<br>Rubyを使ったWebページ制作（主にバックエンド）をしています！</p>
+      
+      <p class="mt-5 pb-3">
+        <%= link_to "https://www.osakac.ac.jp/",target: :_blank do %>
+          University
+          <i class="fas fa-external-link-alt"></i>
+        <% end %>
+        <br>大阪の大学に通っている4年生です！
+      </p>
+      
+      <p class="mt-1 pb-3">
+        <%= link_to "https://youtube.com/playlist?list=PLGUQewQ-bC3_IqDcbKnJ8WpgYX9oeXaym" do %>
+          Camera
+          <i class="fas fa-external-link-alt"></i>
+        <% end %>
+        <br>かっこいい、写真や動画を撮るのが得意です！！
+      </p>
+      <p class="mt-1 pb-3">
+        <%= link_to "https://github.com/naonao-program" do %>
+          Programming
+          <i class="fas fa-external-link-alt"></i>
+        <% end %>
+        <br>Rubyを使ったWebページ制作（主にバックエンド）をしています！
+      </p>
     </div>
   </div>
   <div class = "text-center mt-5">
